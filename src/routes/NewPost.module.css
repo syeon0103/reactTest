@@ -16,6 +16,7 @@
   display: block;
   width: 100%;
   font: inherit;
+  padding: 0.5rem;
   border-radius: 6px;
   border: none;
   background-color: #FFFFFF;
@@ -26,6 +27,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .actions button {
@@ -34,7 +36,7 @@
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 4px;
-  background-color: #B20000;
+  background-color: #FDB10B;
   color: #FD292F;
 }
 
@@ -42,10 +44,17 @@
   background-color: #23014a;
 }
 
-.actions button[type='button'] {
+.actions a {
   background-color: transparent;
+  text-decoration: none;
+  color: #FE8535;
 }
+
 
 .actions button[type='button']:hover {
   color: #FE8535;
+}
+
+.actions a:hover {
+  color: #FD292F;
 }

@@ -1,8 +1,10 @@
 import { MdPostAdd, MdMessage } from 'react-icons/md';
-
+import {Link} from 'react-router-dom';
 import classes from './MainHeader.module.css';
 
-function MainHeader({ onCreatePost }) {
+//Link 가 아닌 a href 사용하면 그때마다 새로 계속 로드됨
+
+function MainHeader({  }) {
   return (
     <header className={classes.header}>
       <h1 className={classes.logo}>
@@ -10,10 +12,10 @@ function MainHeader({ onCreatePost }) {
         React Poster
       </h1>
       <p>
-        <button className={classes.button} onClick={onCreatePost}>
+        <Link to="/create-post" className={classes.button} >
           <MdPostAdd size={18} />
           New Post
-        </button>
+        </Link>
       </p>
     </header>
   );
